@@ -17,7 +17,7 @@ async function scrapeAndAnalyzeComments() {
   analyzeButton.style.backgroundColor = '#cccccc'; // Gray out button during loading
 
   try {
-    const response = await fetch('http://localhost:3000/', {
+    const response = await fetch('https://youtube-comment-analysis-extension.onrender.com/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
